@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/pannellum.css">
+  <link rel="stylesheet" href="standalone.css">
+  <style>
+    #app {
+      width: 800px;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+<div id="app"></div>
+<script type="text/javascript" src="../js/libpannellum.js"></script>
+<script type="text/javascript" src="../js/pannellum.js"></script>
+<script type="text/javascript" src="standalone.js"></script>
+<script>
+
+pannellum.viewer('app', {
+  panorama: '../../examples/examplepano.jpg',
+  type: 'equirectangular',
+  hotSpots: [
+    {
+      pitch: -12,
+      yaw: 170,
+      type: 'info',
+      text: 'testtt!!!'
+    },
+    {
+      pitch: -12,
+      yaw: 180,
+      type: 'info',
+      text: '222',
+      URL: 'http://www.baidu.com/'
+    },
+  ]
+})
+</script>
+</body>
+</html>
